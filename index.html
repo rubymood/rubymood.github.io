@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html lang='hu-HU' xml:lang='hu-HU' xmlns='http://www.w3.org/1999/xhtml'> 
+  <head> 
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' /> 
+    <meta content='hu' http-equiv='Content-Language' /> 
+    <title>Ruby mood</title> 
+<script type="text/javascript" language="Javascript" src="curvycorners.js"></script>
+<script type="text/javascript">
+addEvent(window, 'load', initCorners);
+
+function initCorners() { 
+curvyCorners({tl: { radius: 10 },
+tr: { radius: 10 },
+bl: { radius: 10 },
+br: { radius: 10 }},'li.rounded'); 
+
+curvyCorners({tl: { radius: 0 },
+tr: { radius: 10 },
+bl: { radius: 10 },
+br: { radius: 10 }},'#introduction');
+
+curvyCorners({tl: { radius: 10 },
+tr: { radius: 10 },
+bl: { radius: 10 },
+br: { radius: 10 }},'#reference');
+
+curvyCorners({tl: { radius: 10 },
+tr: { radius: 0 },
+bl: { radius: 10 },
+br: { radius: 10 }},'#contact');
+ 
+}
+
+
+</script> 
+
+    <style>
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ECDFFF;
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+  text-align: center;
+}
+
+#contact a {
+  /*color: #FFFFF2;*/
+  color: #a44d22;
+}
+
+#reference a {
+  color: #11111C;
+}
+
+ul {
+  margin: 0px auto;
+  padding: 0px;
+  margin-top: 25px;
+  width: 720px;
+}
+
+li {
+  width: 200px;
+  height: 150px;
+  display: block;
+  float: left;
+  margin-left: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+li h2 {
+  padding-top: 10px;
+  font-size: 18px;
+  margin: 0px;
+  color: #151412;
+}
+
+
+.content {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: 190px;
+  width: 700px;
+  height: 250px;
+  min-height: 250px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+p {
+  padding: 0px 20px;
+  line-height: 25px;
+}
+
+li:hover div {
+  visibility: visible;
+}
+
+
+.pillar {
+  position: relative;
+  left: 0px;
+  top: -30px;
+  width: 220px;
+  height: 30px;
+  min-height: 30px;
+  display: block;
+}
+
+#introduction {
+  background-color: #DAFF91;
+  width: 700px;
+}
+
+#introduction .pillar {
+  background-color: #DAFF91;
+}
+
+#reference {
+  background-color: #EEEEAA;
+  left: -240px;
+}
+
+#reference .pillar {
+  background-color: #EEEEAA;
+  left: 240px;
+}
+
+#contact {
+  background-color: #CDCDCD;
+  left: -480px;
+}
+
+#contact .pillar {
+  background-color: #CDCDCD;
+  left: 480px;
+}
+
+table {
+  width: 720px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-collapse:collapse;
+  text-align: center;
+}
+
+table td {
+  padding: 3px;
+}
+
+table th {
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+.left_border {
+  border-left: 1px solid black;
+}
+
+    </style>
+  </head> 
+  <body> 
+    <ul>
+      <li class="rounded" style="background-color: #DAFF91">
+        <h2>Bemutatkozás</h2>
+        <div class="content" id='introduction'>
+          <span class="pillar"></span>
+          <p>Komzák Nándornak hívnak. 1979-ben születtem Budapesten. 2004-ben jöttem rá hogy érdekel a web. Na nem a szörfözés hanem a web egyszerűsége: pár sor html és már látszik is az egész világon amit alkottunk. Persze aztán rájöttem, hogy a web nem is annyira egyszerű, így hát folyamatos önfejlesztés van azóta. 2004-2007-ig a következő 3 betűsökhöz volt szerencsém: php, css, xml, xsl, sql, cvs, orm, ie6. Utóbbi maradandó élmény... Persze ez idő alatt nem maradhatott ki a javascript sem. 2008-tól viszont ruby nyelvben ténykedek és rails keretrendszerrel építem az oldalakat. Sajnos itthon még egyik sem elterjedt, de ezen talán lehet változtatni..</p>
+        </div>
+      </li>
+      <li class="rounded" style="background-color: #EEEEAA">
+        <h2>Referencia</h2>
+        <div class="content" id='reference'>
+          <span class="pillar"></span>
+          <table>
+            <tr><th>Ruby</th><th class="left_border">PHP</th></tr>
+            <tr><td><a href="http://mofo.hu">mofo.hu</a><br /><span>Lift up egy korábbi rails verzióról plusz funkciók beiktatásával.</span></td><td class="left_border"><a href="http://waberers.hu">waberers.hu</a><br /><span>Fejlesztés, sitebuild.</span></td></tr>
+            <tr><td><a href="http://mobilize.hu">mobilize.hu</a><br /><span>Kreatív részvétel a tervezésben. Oldal lefejlesztése, folyamatos bővítése.</span></td><td class="left_border"><a href="http://zoldhid.hu">zoldhid.hu</a><br /><span>Fejlesztés, sitebuild.</span></td></tr>
+            <tr><td>* <a href="http://github.com/rubymood">egyéb opensource tevékenység</a></td><td class="left_border">* egyéb micro és corporate siteok</td></tr>
+          </table>
+        </div>
+      </li>
+      <li class="rounded" style="background-color: #CDCDCD">
+        <h2>Elérhetőség</h2>
+        <div class="content" id='contact'>
+          <span class="pillar"></span>
+          <p>
+            <img src="ruby.jpg" style="float:left; width:110px; padding-right: 10px" />
+            Email: <a href="mailto:rubymood@gmail.com">rubymood@gmail.com</a><br />
+            Blog: <a href="http://rubymood.wordpress.com">http://rubymood.wordpress.com</a><br />
+            Github: <a href="http://rubymood.github.com">http://rubymood.github.com</a><br />
+            Twitter: <a href="http://twitter.com/rubymood">http://twitter.com/rubymood</a>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </body> 
+</html> 
