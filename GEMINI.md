@@ -32,3 +32,7 @@ A build folyamat lokálisan történik, a GitHub Actions **nem** végez buildel�
     ```
 
 **Fontos:** A `main` branch-re soha ne kerüljön közvetlenül forráskód, csak a `jekyll build` parancs kimenete.
+
+## Aktuális Teendők
+
+Az aktuális feladatok és a megvalósítási terv a `gemini_action_plan.txt` fájlban található. Kérjük, ellenőrizd ezt a fájlt a folyamatban lévő munkához és a következő lépésekhez.
