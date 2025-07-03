@@ -33,9 +33,20 @@ github_username:  "rubymood/rubymood.github.io"
 source: source
 
 # Build settings
-theme: minima
+#theme: minima
+
+sass:
+  load_paths:
+    - _sass
+
+include:
+  - _sass
+  - assets
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -3,5 +3,10 @@
 ---
 
 @import "minima";
-@import "minima/layout"; 
+
+.footer-col-2 {
+  width: -webkit-calc(36% - (#{$spacing-unit} / 2));
+  width:         calc(36% - (#{$spacing-unit} / 2));
+}
+
 
