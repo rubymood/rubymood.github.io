@@ -46,6 +46,7 @@ include:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+test_variable: "hello"
 
 
 # Exclude from processing.
