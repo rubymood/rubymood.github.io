@@ -9,7 +9,7 @@ A build folyamat lokálisan történik, a GitHub Actions **nem** végez buildel�
 ## Branch-elési Stratégia
 
 -   `dev`: Az alapértelmezett fejlesztési branch. Minden forráskód (Markdown posztok, Jekyll konfiguráció, stíluslapok stb.) ezen a branch-en található.
--   `main`: A production branch. Ez a branch tartalmazza a Jekyll által legenerált statikus weboldalt (a `_site` mappa tartalmát). A GitHub Pages ezt a branch-et használja a weboldal publikálásához.
+-   `master`: A production branch. Ez a branch tartalmazza a Jekyll által legenerált statikus weboldalt (a `_site` mappa tartalmát). A GitHub Pages ezt a branch-et használja a weboldal publikálásához.
 
 ## Fejlesztési és Publikálási Folyamat
 
@@ -24,14 +24,14 @@ A build folyamat lokálisan történik, a GitHub Actions **nem** végez buildel�
     ```
 4.  **Commit:**
     -   A forráskód változásait commitold a `dev` branch-re.
-    -   A legenerált `_site` mappa tartalmát commitold a `main` branch-re.
+    -   A legenerált `_site` mappa tartalmát commitold a `master` branch-re.
 5.  **Push:** Töltsd fel mindkét branch-et a remote repository-ba.
     ```bash
     git push origin dev
     git push origin main
     ```
 
-**Fontos:** A `main` branch-re soha ne kerüljön közvetlenül forráskód, csak a `jekyll build` parancs kimenete.
+
 
 ## Aktuális Teendők
 
