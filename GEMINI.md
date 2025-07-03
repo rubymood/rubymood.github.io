@@ -4,7 +4,7 @@
 
 Ez a projekt egy Jekyll alapú statikus weboldal, ami a `rubymood/rubymood.github.io` repository-t használja és a GitHub Pages szolgáltatja.
 
-A build folyamat lokálisan történik, a GitHub Actions **nem** végez buildelést.
+A build folyamat a GitHub Actions segítségével történik.
 
 ## Branch-elési Stratégia
 
@@ -18,17 +18,11 @@ A build folyamat lokálisan történik, a GitHub Actions **nem** végez buildel�
     git checkout dev
     ```
 2.  **Módosítások:** Írj új bejegyzést, módosítsd a stílusokat, stb.
-3.  **Lokális Build:** Generáld le a statikus oldalt a `_site` mappába.
-    ```bash
-    jekyll build
-    ```
-4.  **Commit:**
+3.  **Commit:**
     -   A forráskód változásait commitold a `dev` branch-re.
-    -   A legenerált `_site` mappa tartalmát commitold a `master` branch-re.
-5.  **Push:** Töltsd fel mindkét branch-et a remote repository-ba.
+4.  **Push:** Töltsd fel a `dev` branch-et a remote repository-ba.
     ```bash
     git push origin dev
-    git push origin main
     ```
 
 
