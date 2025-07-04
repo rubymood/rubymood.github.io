@@ -30,12 +30,26 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 youtube_username: "@rubymood-dev"
 github_username:  "rubymood/rubymood.github.io"
 
+# Build settings
+
+#theme: minima
 source: source
+destination: docs
 
 # Build settings
-theme: minima
+#theme: minima
+
+sass:
+  load_paths:
+    - _sass
+
+include:
+  - _sass
+  - assets
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
