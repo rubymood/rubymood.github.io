@@ -48,7 +48,7 @@ include:
   - assets
 
 plugins:
-  - jekyll-feed
+  #  - jekyll-feed
   - jekyll-seo-tag
 
 # Exclude from processing.
